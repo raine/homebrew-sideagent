@@ -1,26 +1,26 @@
 class AgentOffload < Formula
   desc "Launch coding agents in tmux panes and wait for completion"
   homepage "https://github.com/raine/agent-offload"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/agent-offload/releases/download/v0.1.1/agent-offload-darwin-arm64.tar.gz"
-      sha256 "61b270c8e23ba6405ff3f322c8bd9780538a5460a4e22482b84508e6a57c7bd5"
+      url "https://github.com/raine/agent-offload/releases/download/v0.1.2/agent-offload-darwin-arm64.tar.gz"
+      sha256 "a4064d5c988ddba7f0dfb7e140bc71f1d1868a72bcc565c4350250e7237dc19f"
     else
-      url "https://github.com/raine/agent-offload/releases/download/v0.1.1/agent-offload-darwin-amd64.tar.gz"
-      sha256 "e90f3806d639d6c1acdacfcdefade5f99963444337ba262585b817c0148a9f0e"
+      url "https://github.com/raine/agent-offload/releases/download/v0.1.2/agent-offload-darwin-amd64.tar.gz"
+      sha256 "d81209f9417229423389b6cb60fe4397f5523463741910c46bd44a837f240e47"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raine/agent-offload/releases/download/v0.1.1/agent-offload-linux-arm64.tar.gz"
-      sha256 "5b4918c839f4a2f72e4236bbccd2358d7766e84fe9c3816cbf976704a3f6e4af"
+      url "https://github.com/raine/agent-offload/releases/download/v0.1.2/agent-offload-linux-arm64.tar.gz"
+      sha256 "59c4fc016ae2000c2727bc0f81e01ba545b9ef179bb49fe6e5fbf3db4ad21681"
     else
-      url "https://github.com/raine/agent-offload/releases/download/v0.1.1/agent-offload-linux-amd64.tar.gz"
-      sha256 "a5a9bd1e943c90274df57f14c48997af88fce77dfd7911ac604a26d36bded1db"
+      url "https://github.com/raine/agent-offload/releases/download/v0.1.2/agent-offload-linux-amd64.tar.gz"
+      sha256 "92c929fbb3be299e52fa4a43051bd74c17e119b3c4800b31faad960b158b9e25"
     end
   end
 
