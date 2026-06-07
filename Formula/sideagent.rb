@@ -1,26 +1,26 @@
 class Sideagent < Formula
-  desc "Launch coding agents in tmux panes and wait for completion"
+  desc "Run another coding agent from your current session"
   homepage "https://github.com/raine/sideagent"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/sideagent/releases/download/v0.1.5/sideagent-darwin-arm64.tar.gz"
-      sha256 "bd4b451ec05a37fc859c37da5e88d057d35a9bbb7f06f43987367daa292abaa8"
+      url "https://github.com/raine/sideagent/releases/download/v0.1.6/sideagent-darwin-arm64.tar.gz"
+      sha256 "3fb69a39376ae710902370454cd4c156407d2763d5ed6a982f91eab674f6b2f6"
     else
-      url "https://github.com/raine/sideagent/releases/download/v0.1.5/sideagent-darwin-amd64.tar.gz"
-      sha256 "b3986d98a9f6fb4f399dc9fb866f93f48683d99318ee1eab28323e321c75bd21"
+      url "https://github.com/raine/sideagent/releases/download/v0.1.6/sideagent-darwin-amd64.tar.gz"
+      sha256 "27146d186c342acf68cc32c77ea36c6ee34e66b34aac713ab407f5ba2f09d3ab"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raine/sideagent/releases/download/v0.1.5/sideagent-linux-arm64.tar.gz"
-      sha256 "507940ac568a1dd46a2b241ee87a03cba196bae4a3a2791fb50882c2ee13991b"
+      url "https://github.com/raine/sideagent/releases/download/v0.1.6/sideagent-linux-arm64.tar.gz"
+      sha256 "06692a8b4ce0be39ec67b08011456d3c9062e3d6ccd6afede89956ebca2006fd"
     else
-      url "https://github.com/raine/sideagent/releases/download/v0.1.5/sideagent-linux-amd64.tar.gz"
-      sha256 "ac12473e9be3071eb09061e9fa823ad32f751c81e614246c27c119eae55fd0b3"
+      url "https://github.com/raine/sideagent/releases/download/v0.1.6/sideagent-linux-amd64.tar.gz"
+      sha256 "4878f927da12e4e0a315b2fe18e663448e161ad4645c587dca6c2056c972a71a"
     end
   end
 
